@@ -3,6 +3,7 @@ import subprocess
 import sys
 import chainlit as cl
 from .executor import PythonExecutor
+from security import safe_command
 
 
 async def python_exec(code: str, language: str = "python"):
@@ -26,7 +27,7 @@ async def need_install_package(package_name: str) -> dict:
     """
     # check if package is already installed
     cmd_check = [sys.executable, "-m", "pip", "show", package_name]
-    proc = subprocess.Popen(cmd_check, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    proc = safe_command.run(subprocess.Popen, cmd_check, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     out, _ = proc.communicate()
     if out:
         return {"description": f"{package_name} is already installed"}

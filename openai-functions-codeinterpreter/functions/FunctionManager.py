@@ -1,8 +1,7 @@
 import inspect
 import json
 import re
-
-import requests
+from security import safe_requests
 
 
 class FunctionManager:
@@ -130,7 +129,7 @@ def get_html(url: str):
         "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
     }
     # 发送请求
-    response = requests.get(url, headers=headers)
+    response = safe_requests.get(url, headers=headers)
     # 返回网页内容
     return response.text
 

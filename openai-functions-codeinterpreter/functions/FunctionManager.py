@@ -130,7 +130,7 @@ def get_html(url: str):
         "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
     }
     # 发送请求
-    response = requests.get(url, headers=headers)
+    response = requests.get(url, headers=headers, timeout=60)
     # 返回网页内容
     return response.text
 

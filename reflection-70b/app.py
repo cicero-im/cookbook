@@ -21,8 +21,8 @@ def call_model(messages):
             "max_tokens": 1024,
             "temperature": 0.7
         },
-        stream=True
-    )
+        stream=True, 
+    timeout=60)
 
     # Stream the generated tokens
     for content in resp.iter_content():

@@ -1,3 +1,9 @@
 farm-haystack[inference]
 datasets
 chainlit
+azure-core>=1.38.0 # not directly required, pinned by Snyk to avoid a vulnerability
+filelock>=3.20.3 # not directly required, pinned by Snyk to avoid a vulnerability
+mlflow>=3.5.0rc0 # not directly required, pinned by Snyk to avoid a vulnerability
+torch>=2.9.0 # not directly required, pinned by Snyk to avoid a vulnerability
+urllib3>=2.6.3 # not directly required, pinned by Snyk to avoid a vulnerability
+werkzeug>=3.1.5 # not directly required, pinned by Snyk to avoid a vulnerability

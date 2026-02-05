@@ -3,3 +3,4 @@ pinecone-client==2.2.1
 tiktoken==0.3.3
 langchain
 chainlit
+zipp>=3.19.1 # not directly required, pinned by Snyk to avoid a vulnerability

@@ -1,5 +1,5 @@
 # Use an appropriate base image, e.g., python:3.10-slim
-FROM --platform=linux/amd64 python:3.9-slim
+FROM --platform=linux/amd64 python:3.14.3-slim
 
 # Set environment variables (e.g., set Python to run in unbuffered mode)
 ENV PYTHONUNBUFFERED 1

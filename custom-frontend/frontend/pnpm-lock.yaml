@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@chainlit/react-client':
-    specifier: ^0.0.1
-    version: 0.0.1(@types/react@18.2.37)(react-dom@18.2.0)(react@18.2.0)(recoil@0.7.7)
+    specifier: 0.1.2
+    version: 0.1.2(@types/react@18.2.37)(react-dom@18.2.0)(react@18.2.0)(recoil@0.7.7)
   '@radix-ui/react-slot':
     specifier: ^1.0.2
     version: 1.0.2(@types/react@18.2.37)(react@18.2.0)
@@ -26,12 +26,18 @@ dependencies:
   react-dom:
     specifier: ^18.2.0
     version: 18.2.0(react@18.2.0)
+  recoil:
+    specifier: ^0.7.7
+    version: 0.7.7(react-dom@18.2.0)(react@18.2.0)
   tailwind-merge:
     specifier: ^2.0.0
     version: 2.0.0
   tailwindcss-animate:
     specifier: ^1.0.7
     version: 1.0.7(tailwindcss@3.3.5)
+  uuid:
+    specifier: ^9.0.1
+    version: 9.0.1
 
 devDependencies:
   '@types/node':
@@ -43,6 +49,9 @@ devDependencies:
   '@types/react-dom':
     specifier: ^18.2.7
     version: 18.2.15
+  '@types/uuid':
+    specifier: ^9.0.7
+    version: 9.0.8
   '@typescript-eslint/eslint-plugin':
     specifier: ^6.0.0
     version: 6.11.0(@typescript-eslint/parser@6.11.0)(eslint@8.53.0)(typescript@5.2.2)
@@ -95,8 +104,8 @@ packages:
       regenerator-runtime: 0.14.0
     dev: false
 
-  /@chainlit/react-client@0.0.1(@types/react@18.2.37)(react-dom@18.2.0)(react@18.2.0)(recoil@0.7.7):
-    resolution: {integrity: sha512-iKle82o4jXnxc/MPsVdTq0kGYFm46Z5q0r9R5lIDVOuGXJes9IgzsNVaBUv4Ur//VIJvJ6dVWoufvDUWsLreaw==}
+  /@chainlit/react-client@0.1.2(@types/react@18.2.37)(react-dom@18.2.0)(react@18.2.0)(recoil@0.7.7):
+    resolution: {integrity: sha512-/k4KFtfdYQ9xrKIYzUXRmd/L9n4PJmPkMLoVO6k7d6eEQpfvhbZ1SxAJ+TUX9YyVXfzVfJoII0WSkO5TjM+V5Q==}
     peerDependencies:
       '@types/react': ^18.2.0
       react: ^18.2.0
@@ -603,6 +612,10 @@ packages:
 
   /@types/semver@7.5.5:
     resolution: {integrity: sha512-+d+WYC1BxJ6yVOgUgzK8gWvp5qF8ssV5r4nsDcZWKRWcDQLQ619tvWAxJQYGgBrO1MnLJC7a5GtiYsAoQ47dJg==}
+    dev: true
+
+  /@types/uuid@9.0.8:
+    resolution: {integrity: sha512-jg+97EGIcY9AGHJJRaaPVgetKDsrTgbRjQ5Msgjh/DQKEFl0DtyRr/VCOyD1T2R1MNeWPK/u7JoGhlDZnKBAfA==}
     dev: true
 
   /@typescript-eslint/eslint-plugin@6.11.0(@typescript-eslint/parser@6.11.0)(eslint@8.53.0)(typescript@5.2.2):
@@ -1973,6 +1986,7 @@ packages:
 
   /uuid@9.0.1:
     resolution: {integrity: sha512-b+1eJOlsR9K8HJpow9Ok3fiWOWSIcIzXodvv0rQjVoOVNpWMpxf1wZNpt4y9h10odCNrqnYp1OBzRktckBe3sA==}
+    deprecated: uuid@10 and below is no longer supported.  For ESM codebases, update to uuid@latest.  For CommonJS codebases, use uuid@11 (but be aware this version will likely be deprecated in 2028).
     hasBin: true
     dev: false
 
